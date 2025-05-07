@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Officina Ivan Corona</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+
+  
+    <!-- Toggler Button -->
+      <button class="navbar-toggler ms-auto" type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#collapsibleNavbar"
+          aria-controls="collapsibleNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#contatti">Contatti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chi-siamo">Chi siamo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dove-siamo">Dove siamo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servizi">Servizi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/autosospesa.jpeg"  class="d-block img-fluid" style="width:100%; height:700px; object-fit:cover; border:0; display:flex;">
+      <div class="carousel-caption">
+        <h2><strong>OFFICINA AC Motorsport</strong></h2>
+        <p>Villabassa, Zona Industriale 10</p>
+      </div>
+    </div>
+  
+  
+    <div class="carousel-item">
+      <img src="image/taniche_olio.jpeg" alt="Meccanico" class="d-block img-fluid" style="width:100%; height:700px; object-fit:cover; border:0; display:flex;">
+      <div class="carousel-caption">
+        <h2><strong>OFFICINA AC Motorsport</strong></h2>
+        <p>professionalità e passione</p>
+      </div>
+    </div>
+  
+
+    <div class="carousel-item">
+      <img src="image/ivan_lavoro.jpeg" alt="Gomme" class="d-block img-fluid" style="width:100%; height:700px; object-fit:cover; border:0; display:flex;">
+      <div class="carousel-caption">
+        <h2><strong>IVAN CORONA</strong></h2>
+        <p>Ci prendiamo cura delle vostre auto</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>La tua auto, la nostra passione</h1>
+      <p><em>Manutenzione e riparazione professionale a 360°</em></p>
+      <a href="#contatti" id="prenotaBtn" class="btn">Prenota un Appuntamento</a>
+    </div>
+  </section>
+
+  <!-- Chi Siamo -->
+  <section id="chi-siamo" class="section">
+    <div class="container">
+      <h2>Chi Siamo</h2>
+      <p>Ci prendiamo cura della tua auto con professionalità, esperienza e amore per i motori. <em><strong>Officina AC Motorsport</strong></em> offre servizi di alta qualità per ogni esigenza. Siamo formati continuamente per tenerci aggiornati con gli update elettronici e l'innovazione degli ultimi modelli.</p>
+    </div>
+  </section>
+
+  <!--Dove siamo-->
+  <section id="dove-siamo" class="section">
+    <div class="container">
+      <h2>Dove siamo</h2>
+      <p><strong>📍Indirizzo:</strong> Zona Industriale, 10, I-39039 Villabassa (BZ)</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d683.5593139130585!2d12.157152269645028!3d46.740503917259375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDbCsDQ0JzI1LjgiTiAxMsKwMDknMjguMSJF!5e0!3m2!1sit!2sit!4v1745700104713!5m2!1sit!2sit" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </section>
+
+
+  <!-- Servizi -->
+  <section id="servizi" class="section">
+    <div class="container">
+      <h2>I Nostri Servizi</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Tagliando Auto</h3>
+          <p>Controlli periodici per mantenere la tua auto sempre al massimo delle prestazioni.</p>
+        </div>
+        <div class="service-card">
+          <h3>Riparazioni Meccaniche</h3>
+          <p>Interventi rapidi ed efficaci su motore, freni, sospensioni e altro ancora.</p>
+        </div>
+        <div class="service-card">
+          <h3>Diagnostica Computerizzata</h3>
+          <p>Analisi elettronica per identificare rapidamente ogni tipo di problema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+
+ <!-- <section id="contatti" class="section contact">
+    <div id="googleModuli" class="container">
+      <h2>Contattaci</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp1MKx6rQx2kuC_3D6YgSOLreOPbyp890zIX9555es9F68Gw/viewform?embedded=true" width="800" height="1000" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>    
+      </form>
+    </div>
+  </section>-->
+
+<section id="contatti" class="section contact">
+    <div class="container">
+      <h2>Contattaci</h2>
+      <form action="https://formsubmit.co/cindy.weiss@outlook.it" method="POST">
+        <input type="text" name="name" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="phone" placeholder="333 1234567" required>
+        <textarea name="message" placeholder="Il tuo messaggio..."></textarea>
+        <!--Scegli file-->
+        <div class="mb-3">
+          <input type="file" name="attachment" class="form-control" aria-label="file example" id="fileInput">
+          <div class="invalid-feedback">Example invalid form file feedback</div>
+        </div>
+      
+
+        <!-- Accetta le condizioni -->
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <button id="submitBtn" type="submit">Invia</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn">
+    ↑ Torna su
+  </button>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 La mia Officina. Tutti i diritti riservati.</p>
+      <p>Officina Ivan Corona <br> 
+        Zona Artigianale, 10<br> 
+        39039 Villabassa (BZ) <br> 
+        <a href="https://wa.me/393333781326?text=Ciao%20Ivan!" class="whatsapp-link">
+          <i class="fab fa-whatsapp"> +39 333 378 1326</i>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+
+<!-- Prima SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Poi Popper e Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+<!-- Poi il tuo script.js -->
+<script src="script.js"></script>
+
+  </body>
+  </html>
+  
