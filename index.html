@@ -15,7 +15,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
 
   
@@ -161,17 +161,14 @@
         <input type="email" name="email" placeholder="Email" required>
         <input type="number" name="phone" placeholder="333 1234567" required>
         <textarea name="message" placeholder="Il tuo messaggio..."></textarea>
-        <!--Scegli file-->
-        <div class="mb-3">
-          <input type="file" name="attachment" class="form-control" aria-label="file example" id="fileInput">
-          <div class="invalid-feedback">Example invalid form file feedback</div>
-        </div>
+        <input type="hidden" name="_next" value="https://ac-motorsport.it/grazie.html">
+        <input type="hidden" name="_captcha" value="false">
       
 
         <!-- Accetta le condizioni -->
         <div class="col-12">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <input class="form-check-input" type="checkbox" name="terms" value="" id="invalidCheck" required>
             <label class="form-check-label" for="invalidCheck">
               Agree to terms and conditions
             </label>
