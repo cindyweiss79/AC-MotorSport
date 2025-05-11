@@ -15,14 +15,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Sweet Alert
 document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Impedisce il vero invio per vedere l'alert
+  event.preventDefault(); // blocca invio momentaneamente
+  const form = this;
+
   Swal.fire({
-    title: 'Messaggio inviato!',
-    text: 'Grazie per averci contattato.',
-    icon: 'success',
-    confirmButtonText: 'OK'
+    title: 'Conferma invio?',
+    text: 'Vuoi inviare il messaggio?',
+    icon: 'question',
+    showCancelButton: true,
+    confirmButtonText: 'Sì, invia',
+    cancelButtonText: 'Annulla'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      form.submit(); // invia davvero il modulo a formsubmit.co
+      Swal.fire({
+        title: 'Messaggio inviato!',
+        text: 'Grazie per averci contattato.',
+        icon: 'success'
+      });
+    }
   });
 });
+
 
 // Mostra o nasconde il bottone in base allo scroll
 window.onscroll = function() {
@@ -71,8 +85,12 @@ document.querySelector('form').addEventListener('submit', function() {
 // Funzione per il caricamento della pagina
 window.addEventListener('load', function() {
   const loader = document.querySelector('.loader');
-  loader.style.display = 'none'; // Nasconde il loader al termine del caricamento
+  if (loader) {
+    loader.style.display = 'none'; // Mostra il loader all'inizio
+  }
 });
+
+
 
 
 
