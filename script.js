@@ -37,6 +37,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 });
 
 
+
 // Mostra o nasconde il bottone in base allo scroll
 window.onscroll = function() {
   const scrollTopBtn = document.getElementById("scrollTopBtn");
