@@ -77,10 +77,7 @@ document.getElementById("scrollTopBtn").addEventListener("click", function() {
     })
 })()
 
-// pulisce il form dopo l'invio
-document.querySelector('form').addEventListener('submit', function() {
-  this.reset();
-});
+
 
 // Funzione per il caricamento della pagina
 window.addEventListener('load', function() {
