@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //Sweet Alert
 document.querySelector('form').addEventListener('submit', function(event) {
   event.preventDefault(); // blocca invio momentaneamente
+
   const form = this;
 
   Swal.fire({
@@ -27,12 +28,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
     cancelButtonText: 'Annulla'
   }).then((result) => {
     if (result.isConfirmed) {
-      form.submit(); // invia davvero il modulo a formsubmit.co
-      Swal.fire({
-        title: 'Messaggio inviato!',
-        text: 'Grazie per averci contattato.',
-        icon: 'success'
-      });
+      // Crea un form temporaneo per invio manuale senza reset anticipato
+      const formClone = form.cloneNode(true);
+      document.body.appendChild(formClone);
+      formClone.submit();
     }
   });
 });
